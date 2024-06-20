@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat Variable", sans-serif;
+  font-size: 14px;
+  color: #1f2128;
+}
+
+hr {
+  border: 0.7px 0 0 0 solid #cdcdcd;
+  margin: 10px 15px;
+}
+
+[type="checkbox"]:checked {
+  background-image: url('data:image/svg+xml,<svg width="15" height="10" viewBox="-4 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004" stroke="white" stroke-linecap="round"/></svg>');
+}
+
+[type="checkbox"]:not(:checked):hover {
+  background-image: url('data:image/svg+xml,<svg width="15" height="10" viewBox="-3 0.5 35 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.68 6.592L6.22879 11.5272C6.24925 11.5454 6.28055 11.5437 6.29899 11.5235L16.32 0.520004" stroke="%23E3E3E3" stroke-linecap="round"/></svg>');
+  @apply bg-no-repeat bg-cover;
+}
